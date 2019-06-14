@@ -1,0 +1,18 @@
+<div class="header">
+<button (click)="createNewColumn()">Add new Column+</button>
+<button (click)="createNewTask()">Add new Task+</button>
+</div>
+<div class="group">
+<input type="text" (keyup)="assigneeFilterSubject$.next($event.target.value)">
+<span class="highlight"></span>
+<span class="bar"></span>
+<label>Filter by Assignee</label>
+</div>
+<div class="board">
+<app-column [style.width]="widthOfColumn + '%'"
+*ngFor="let col of theColumns"
+title="{{col.title}}"
+id="{{col.columnId}}">
+</app-column>
+</div>
+

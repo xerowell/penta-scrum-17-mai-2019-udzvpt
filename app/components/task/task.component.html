@@ -1,0 +1,22 @@
+<div class="box small">
+<div (click)="showDetails()" class="task-info" >
+<h3 class="title">{{task.title}}</h3>
+<h4>assignee: {{task.assignee}} </h4>
+</div>
+</div>
+<div class="box" *ngIf="detailsVisible" [class.details]="detailsVisible">
+<a [routerLink]="['/task', task._id]" class="open-task-link">Navigate to Task</a>
+<span class="close-button" *ngIf="detailsVisible" (click)="hideDetails()">&#10006;</span>
+<div (click)="showDetails()" class="task-info" >
+<input class="title" [(ngModel)]="task.title" (blur)="update()">
+<h2>Ref: {{task.taskId}} </h2>
+<h3 class="assignee">
+<span *ngIf="detailsVisible" >Assignee: </span>
+{{task.assignee}}</h3>
+</div>
+<select #selectElem [(ngModel)]="task.columnId" (change)="setStatus(selectElem.value)">
+<option *ngFor="let status of columns" [value]="status.columnId"> {{status.title}}</option>
+</select>
+<div class="loader" *ngIf="loading">Loading...</div>
+</div>
+<div *ngIf="detailsVisible" id="overlay"></div>
