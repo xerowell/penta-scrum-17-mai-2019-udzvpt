@@ -1,0 +1,23 @@
+@import './sass/variables';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.title {
+  color: #ffffff; //$pentasys-red;
+  font-family: $big-titles-lato;
+  text-align: center;
+  text-shadow: 2px 2px 3px #a7a7a7;
+  border-bottom: 8px solid #607D8B;
+  width: 400px;
+  margin: auto;
+  flex-basis: 100%;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  font-size: 63px;
+  cursor: pointer;
+}

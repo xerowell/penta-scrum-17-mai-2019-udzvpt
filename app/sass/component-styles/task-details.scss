@@ -1,0 +1,19 @@
+@import '../variables';
+
+ .hotdoc {
+  display: flex;
+  border: 2px solid lightgrey;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+  line-height: 55px;
+  flex-direction: column;
+  width: 50vw;
+  color: #009688;
+  font-family: $big-titles-lato; 
+}
+
+
+h2 {
+  color: blue;
+}

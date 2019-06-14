@@ -1,0 +1,29 @@
+@import '../variables';
+@import '../material-input';
+@import '../penta-button';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  background-color: #FF5722;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  line-height: 59px;
+  margin-bottom: 30px;
+  color: white;
+  display: block;
+}
+
+.has-error {
+  box-shadow: 0 0 8px 1px #FF5722;
+}
+
+.error {
+  font-style: oblique;
+  color: #FF5722;
+  text-shadow: 0px 1px 1px #616161;
+}

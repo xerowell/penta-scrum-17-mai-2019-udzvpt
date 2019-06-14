@@ -1,0 +1,12 @@
+{
+  "apps": [{
+    "styles": ["app/sass/styles.scss"],
+  }],
+ 
+  "defaults": {
+    "styleExt": "scss",
+    "component": { }
+  }
+}
+
+

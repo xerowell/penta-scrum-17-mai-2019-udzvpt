@@ -1,0 +1,22 @@
+@import '../variables';
+
+.column-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.column-wrapper penta-task {
+  padding-bottom: 15px;
+}
+.column-title {
+  text-align: center;
+  font-family: $big-titles-lato;
+  border-bottom: 1px dashed;
+  line-height: 60px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: $pentasys-orange;
+}

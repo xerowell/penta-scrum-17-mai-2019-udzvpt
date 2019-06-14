@@ -1,0 +1,5 @@
+<div class="column-wrapper">
+  <h1 class="column-title"> {{title}} </h1>
+  
+  <app-task *ngFor="let taskValue of (theTasks | assignee:filterText)" [task]="taskValue"></app-task>
+</div>
